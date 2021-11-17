@@ -58,3 +58,12 @@ buck-out/
 
 # CocoaPods
 /ios/Pods/
+
+#random
+*.settings
+*.project
+*.DS_Store
+
+local.properties
+
+node_modules
