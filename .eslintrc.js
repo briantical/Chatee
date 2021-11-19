@@ -1,4 +1,11 @@
 module.exports = {
   root: true,
-  extends: '@react-native-community',
+  plugins: ['@typescript-eslint', 'prettier', 'import', 'module-resolver'],
+  extends: [
+    '@react-native-community',
+    'airbnb-typescript',
+    'prettier',
+    'prettier/@typescript-eslint',
+    'prettier/react',
+  ],
 };
