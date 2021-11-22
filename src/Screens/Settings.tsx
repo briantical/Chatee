@@ -1,17 +1,9 @@
 import React from 'react';
 import { createStackNavigator } from '@react-navigation/stack';
 
-import { Settings } from '../Components';
+import { Settings } from '@components';
 
-const {
-  Settings: Home,
-  Account,
-  Chats,
-  Notifications,
-  Storage,
-  Help,
-  Invite,
-} = Settings;
+const { Settings: Home, Account, Chats, Notifications, Storage, Help, Invite } = Settings;
 
 const Stack = createStackNavigator();
 

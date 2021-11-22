@@ -12,6 +12,7 @@ const MainRoute = () => {
     <NavigationContainer>
       <Stack.Navigator screenOptions={{ headerShown: false }}>
         <Stack.Screen name="HomeScreens" children={MainScreens} />
+
         <Stack.Screen name="SettingsScreens" children={SettingsScreens} />
       </Stack.Navigator>
     </NavigationContainer>

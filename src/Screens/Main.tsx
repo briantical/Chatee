@@ -3,8 +3,8 @@ import Icon from 'react-native-vector-icons/Entypo';
 import { createStackNavigator } from '@react-navigation/stack';
 import { createMaterialTopTabNavigator } from '@react-navigation/material-top-tabs';
 
-import { Main } from '../Components';
-import { Header } from '../Commons';
+import { Main } from '@components';
+import { Header } from '@commons';
 
 const { Camera, Calls, Chats, Status } = Main;
 
@@ -24,15 +24,14 @@ const MainTabs = () => {
         },
         tabBarStyle: { backgroundColor: '#202C33' },
         tabBarIndicatorStyle: { backgroundColor: '#00A884', height: 3 },
-      }}>
+      }}
+    >
       <Tab.Screen
         name="Camera"
         component={Camera}
         options={{
           tabBarShowLabel: false,
-          tabBarIcon: ({ color }) => (
-            <Icon name="camera" color={color} size={20} />
-          ),
+          tabBarIcon: ({ color }) => <Icon name="camera" color={color} size={20} />,
         }}
       />
 
@@ -50,7 +49,8 @@ const MainScreen = () => {
     <Stack.Navigator
       screenOptions={{
         header: () => <Header />,
-      }}>
+      }}
+    >
       <Stack.Screen name="HomeTabs" children={MainTabs} />
     </Stack.Navigator>
   );
